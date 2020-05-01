@@ -1,0 +1,218 @@
+:root {
+  --azul: #029ffe;
+  --rosado: #e9304f;
+}
+/* Azul #029FFE
+Rosado #E9304F */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: rgb(141, 141, 141);
+}
+/* Header css */
+
+.logo {
+  width: 7.5rem;
+}
+header {
+  height: 7.5rem;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 159, 254, 1) 0%,
+    rgba(233, 48, 79, 1) 100%
+  );
+  color: white;
+}
+/* aplicando flexbox para hacer el menu */
+.header-content {
+  display: flex;
+  height: inherit;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  max-width: 1100px;
+}
+/* flexbox a ul para afectar a los hijos directos */
+.nav ul {
+  display: flex;
+  list-style: none;
+}
+.nav a {
+  text-decoration: none;
+  color: white;
+  margin-left: 35px;
+  font-size: 20px;
+}
+
+/* botón especial para dar */
+.nav .button-dar {
+  background-color: #029ffe;
+  padding: 10px 35px;
+}
+
+/* aplicando efecto hover */
+.nav .button-dar:hover {
+  background: white;
+  color: #029ffe;
+}
+
+/* hero */
+.hero {
+  height: 100vh;
+  background-image: url("../images/fondo-hero.png");
+  background-color: rgba(0, 0, 0, 0.657);
+  background-blend-mode: soft-light;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.hero h1 {
+  color: white;
+  font-size: 80px;
+  margin: 10px 0;
+  position: relative;
+}
+
+.hero span {
+  /*  border-bottom: 8px solid;
+    border-bottom-color: rgb(233, 47, 78); */
+}
+
+.btn-fe {
+  display: block;
+  font-size: 1.7rem;
+  color: white;
+  text-decoration: none;
+  background: linear-gradient(to left, rgb(233, 47, 78), rgb(2, 159, 254));
+  margin: 60px 10px;
+  padding: 10px 25px;
+}
+
+.line::after {
+  content: "";
+  display: block;
+  width: 62%;
+  height: 1.2rem;
+  position: absolute;
+  right: 5%;
+  background: linear-gradient(to left, rgb(2, 159, 254), rgb(233, 47, 78));
+}
+.plataformas h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.plataformas p {
+  margin-bottom: 10px;
+}
+
+.wrap-1,
+.wrap-2 {
+  display: flex;
+  color: white;
+}
+
+.plataformas h2 {
+  font-size: 5rem;
+}
+
+.grupo-comunion-content,
+.reformedyouth {
+  flex: 0 0 calc(50%);
+}
+
+.wrap-1 {
+  justify-content: space-between;
+}
+
+.container p {
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+  font-weight: 100;
+}
+
+.plataformas a {
+  background: var(--rosado);
+  padding: 1rem 1.8rem;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  margin-top: 0.8rem;
+  font-size: 1.5rem;
+}
+
+.reformedyouth {
+  background-image: url(../images/fondo-hero.png);
+  height: 60vh;
+  display: flex;
+}
+
+.reformedyouth,
+.grupo-comunion-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grupo-comunion-content {
+  background-image: url("https://images.pexels.com/photos/4218977/pexels-photo-4218977.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  height: 60vh;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: soft-light;
+}
+
+.reformedyouth {
+  background-image: url(../images/fondo-hero.png);
+  height: 60vh;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-blend-mode: soft-light;
+}
+.reformedyouth {
+  background-image: url(../images/fondo-hero.png);
+  height: 60vh;
+  display: flex;
+}
+
+/* mujer de gracia y campusgu */
+
+.mujerdegracia {
+  background-image: url(../images/fondo-hero.png);
+}
+
+.campusgu {
+  background-image: url(../images/fondo-hero.png);
+}
+
+.wrap-content {
+  padding: 2.5rem 5rem;
+}
+
+/* sectiones */
+
+.mujerdegracia,
+.campusgu {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* tamano de secciones */
+
+/* .container-flow {
+  width: 25rem;
+}
+ */
