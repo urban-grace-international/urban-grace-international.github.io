@@ -2,6 +2,7 @@
   --azul: #029ffe;
   --rosado: #e9304f;
 }
+
 /* Azul #029FFE
 Rosado #E9304F */
 
@@ -15,11 +16,13 @@ body {
   font-family: Helvetica, Arial, sans-serif;
   background-color: rgb(141, 141, 141);
 }
+
 /* Header css */
 
 .logo {
   width: 7.5rem;
 }
+
 header {
   height: 7.5rem;
   background: linear-gradient(
@@ -29,6 +32,7 @@ header {
   );
   color: white;
 }
+
 /* aplicando flexbox para hacer el menu */
 .header-content {
   display: flex;
@@ -36,13 +40,15 @@ header {
   align-items: center;
   justify-content: space-between;
   margin: auto;
-  max-width: 1100px;
+  max-width: 1500px;
 }
+
 /* flexbox a ul para afectar a los hijos directos */
 .nav ul {
   display: flex;
   list-style: none;
 }
+
 .nav a {
   text-decoration: none;
   color: white;
@@ -60,6 +66,7 @@ header {
 .nav .button-dar:hover {
   background: white;
   color: #029ffe;
+  transition: opacity 0.5s ease-out;
 }
 
 /* hero */
@@ -87,7 +94,7 @@ header {
 
 .hero span {
   /*  border-bottom: 8px solid;
-    border-bottom-color: rgb(233, 47, 78); */
+   border-bottom-color: rgb(233, 47, 78); */
 }
 
 .btn-fe {
@@ -109,110 +116,194 @@ header {
   right: 5%;
   background: linear-gradient(to left, rgb(2, 159, 254), rgb(233, 47, 78));
 }
-.plataformas h2 {
-  font-size: 2rem;
-  margin-bottom: 10px;
-}
 
-.plataformas p {
-  margin-bottom: 10px;
+/* Plataformas */
+.plataformas-container {
+  display: flex;
+  justify-content: center;
+  background-color: black;
 }
 
 .wrap-1,
-.wrap-2 {
+.wrap-2,
+.wrap-3,
+.wrap-4 {
+  height: 30rem;
+  width: 60rem;
   display: flex;
-  color: white;
-}
-
-.plataformas h2 {
-  font-size: 5rem;
-}
-
-.grupo-comunion-content,
-.reformedyouth {
-  flex: 0 0 calc(50%);
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
 }
 
 .wrap-1 {
-  justify-content: space-between;
+  background-image: url("/images/grupodecomunion.png");
+  background-color: rgba(0, 0, 0, 0.87);
+  background-blend-mode: soft-light;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.container p {
+.wrap-2 {
+  background-image: url("/images/reformedyouth.png");
+  background-color: rgba(0, 0, 0, 0.657);
+  background-blend-mode: soft-light;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.wrap-3 {
+  background-color: #97abd9;
+}
+
+.wrap-4 {
+  background-color: #dca900;
+}
+
+.plataformas-container h2 {
+  color: white;
+  font-size: 3rem;
+}
+
+.plataformas p {
+  font-size: 1rem;
+  color: white;
+  padding: 0.1rem 0rem;
+  margin: 0.2rem 0;
+}
+
+.plataformas-container a {
   font-size: 1.2rem;
-  margin-bottom: 0.8rem;
-  font-weight: 100;
+  padding: 0.8rem 1.2rem;
+  display: inline-flex;
+  margin-top: 0.5rem;
+  text-decoration: none;
 }
 
-.plataformas a {
-  background: var(--rosado);
-  padding: 1rem 1.8rem;
-  display: inline-block;
+/* botones de grupo de comunion */
+p.grupo-comunion-note {
+  color: var(--azul);
+}
+
+.plataformas .grupo-comunion-button {
   text-decoration: none;
   color: white;
-  margin-top: 0.8rem;
-  font-size: 1.5rem;
+  background: var(--azul);
 }
 
-.reformedyouth {
-  background-image: url(../images/fondo-hero.png);
-  height: 60vh;
-  display: flex;
+/* botones reformedyouth */
+
+.reformedyouth-button {
+  color: black;
+  background-color: var(--rosado);
+  text-decoration: none;
 }
 
-.reformedyouth,
-.grupo-comunion-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* botones mujer de gracia */
+
+.mujerdegracia h2 {
+  font-family: "DM Serif Text", serif;
 }
 
-.grupo-comunion-content {
-  background-image: url("https://images.pexels.com/photos/4218977/pexels-photo-4218977.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-  height: 60vh;
-  display: flex;
-  background-color: rgba(0, 0, 0, 0.4);
-  background-blend-mode: soft-light;
+.mujerdegracia-button {
+  color: white;
+  background-color: #ffbbbb;
 }
 
-.reformedyouth {
-  background-image: url(../images/fondo-hero.png);
-  height: 60vh;
-  display: flex;
-  background-color: rgba(0, 0, 0, 0.4);
-  background-blend-mode: soft-light;
-}
-.reformedyouth {
-  background-image: url(../images/fondo-hero.png);
-  height: 60vh;
-  display: flex;
+/* botones campusgu */
+.campusgu h2 {
+  color: black;
+  font-family: "oswald";
 }
 
-/* mujer de gracia y campusgu */
-
-.mujerdegracia {
-  background-image: url(../images/fondo-hero.png);
+.campusgu p {
+  color: black;
 }
 
-.campusgu {
-  background-image: url(../images/fondo-hero.png);
+.campusgu-button {
+  color: #dca900;
+  background-color: black;
 }
 
-.wrap-content {
-  padding: 2.5rem 5rem;
+/* footer */
+.footer {
+  width: 100vw;
+  height: 23.5rem;
+  background: black;
 }
 
-/* sectiones */
-
-.mujerdegracia,
-.campusgu {
-  height: 60vh;
+.footer-container {
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 1200px;
+  width: 90%;
+  height: 100%;
+  margin: auto;
 }
-/* tamano de secciones */
 
-/* .container-flow {
-  width: 25rem;
+.footer-item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex: 0 0 50%;
+  height: 15rem;
 }
- */
+
+.footer-logo {
+  max-width: 100%;
+  flex: 0 0 50%;
+  text-align: center;
+}
+
+.footer-description {
+  flex: 0 0 50%;
+}
+
+.footer-nav-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 50%;
+  height: 15rem;
+}
+
+.footer-nav {
+  flex: 0 0 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 50%;
+}
+
+.footer-contact {
+  flex: 0 0 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.footer-nav-contact li {
+  list-style: none;
+}
+
+.footer-nav-contact a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-item p,
+.footer-nav-contact p {
+  color: white;
+}
+
+.footer-list {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+}
